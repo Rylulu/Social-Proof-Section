@@ -25,7 +25,7 @@ Mobile
 
 ### Links
 
-- Live Site URL: [Github](https://rylulu.github.io/Stats-Preview-Card/)
+- Live Site URL: [Github](https://rylulu.github.io/Social-Proof-Section/)
 
 ## My process
 
