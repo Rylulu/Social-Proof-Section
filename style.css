@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --BgColor: hsl(0, 0%, 100%);
+  --Heading: hsl(300, 43%, 22%);
+  --Verified: hsl(333, 80%, 67%);
+  --Text: hsl(303, 10%, 53%);
+  --BgRate: hsl(300, 24%, 96%);
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.3rem;
+  background: url(images/bg-pattern-top-desktop.svg) no-repeat top left,
+    url(images/bg-pattern-bottom-desktop.svg) no-repeat right bottom;
+}
+
+main {
+  min-height: 95vh;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0 auto;
+  align-items: center;
+  width: 80vw;
+}
+
+.TopContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 1rem;
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+
+.TextComponent {
+  text-wrap: wrap;
+  width: 65%;
+}
+
+.Heading {
+  color: var(--Heading);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.Description {
+  color: var(--Heading);
+  line-height: 1.5;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.RatingComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.Rating {
+  display: flex;
+  align-items: center;
+  background-color: var(--BgRate);
+  margin-bottom: 1rem;
+  color: var(--Heading);
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-indent: 1rem;
+  width: 75%;
+}
+
+.Area1 {
+  margin-right: 4rem;
+}
+
+.Area2 {
+  margin-right: 2rem;
+}
+
+.ReviewComponent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  height: 47vh;
+}
+
+.Card {
+  background-color: var(--Heading);
+  padding: 2rem;
+  color: white;
+  border-radius: 10px;
+  height: max-content;
+}
+
+.UserInfo {
+  display: flex;
+  align-items: center;
+  text-indent: 1rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.ImageHead {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.Verified {
+  color: var(--Verified);
+}
+
+.Review {
+  line-height: 1.5;
+  text-wrap: wrap;
+}
+
+.Place1 {
+  margin-bottom: auto;
+}
+
+.Place2 {
+  margin-top: 2rem;
+}
+
+.Place3 {
+  margin-top: 4rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: var(--Heading);
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .TopContainer {
+    text-align: center;
+  }
+
+  .Heading {
+    font-size: 2rem;
+  }
+
+  .TextComponent {
+    width: 100%;
+  }
+
+  .Rating,
+  .Card {
+    margin: unset;
+  }
+
+  .Rating {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .RatingComponent {
+    align-items: center;
+  }
+
+  .ReviewComponent {
+    height: fit-content;
+  }
+}
